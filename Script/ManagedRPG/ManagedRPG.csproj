@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <Import Project="..\..\Plugins\UnrealSharp\UnrealSharp.Shared.props" />
+
+  <!--
+    项目自身的 C++ 类绑定由 UnrealSharp 的 glue 项目编译产出，落在 Binaries/Managed/<tfm>/<Module>.dll。
+    UnrealSharp 通过 GenerateProject 创建用户项目时不会自动加这个引用（向导未传 Dependencies），
+    因此这里手动引用，否则用户代码无法继承/访问本项目的 C++ 类（如 ARPGCharacterBase）。
+  -->
+  <ItemGroup>
+    <Reference Include="RPG">
+      <HintPath>..\..\Binaries\Managed\net10.0\RPG.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

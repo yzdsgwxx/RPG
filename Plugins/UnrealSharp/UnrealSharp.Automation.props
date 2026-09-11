@@ -1,0 +1,26 @@
+<Project>
+    <PropertyGroup>
+        <UE5RulesProjPath>$(EngineDir)\Intermediate\Build\BuildRulesProjects\UE5Rules\UE5Rules.csproj</UE5RulesProjPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="Exists('$(UE5RulesProjPath)')">
+        <UE5RulesContent>$([System.IO.File]::ReadAllText('$(UE5RulesProjPath)'))</UE5RulesContent>
+        <UE5Rules_DefineConstants>$([System.Text.RegularExpressions.Regex]::Match($(UE5RulesContent), '&lt;DefineConstants&gt;(?&lt;content&gt;.*?)&lt;/DefineConstants&gt;').Groups['content'].Value)</UE5Rules_DefineConstants>
+        <UE5Rules_DefineConstants>$([System.Text.RegularExpressions.Regex]::Replace($(UE5Rules_DefineConstants), '\s+', ''))</UE5Rules_DefineConstants>
+    </PropertyGroup>
+
+    <!--
+        目标框架选择：
+        UE 5.8+ 的 UnrealBuildTool 运行在 net10.0，UBT 插件必须与其匹配，否则会被跳过，
+        并在 SetupUbtPlugins 阶段抛出
+        "Could not load file or assembly ...UnrealSharpManagedGlue.dll" 而编译失败。
+        原实现依赖引擎的 UE5Rules.csproj 是否存在来判定引擎版本；在 Installed Engine Build
+        下该文件可能尚未生成，从而回退到 net8.0。这里改为默认 net10.0，
+        仅在明确检测到低于 5.8 时才回退 net8.0。
+    -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <TargetFramework Condition="'$(UE5Rules_DefineConstants)' != '' AND !$(UE5Rules_DefineConstants.Contains('UE_5_8_OR_LATER'))">net8.0</TargetFramework>
+    </PropertyGroup>
+    
+</Project>

@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Development": {
+      "commandName": "Executable",
+      "executablePath": "D:\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+      "commandLineArgs": "\"D:\\UnrealProjects\\RPG\\RPG.uproject\""
+    },
+    "Debug": {
+      "commandName": "Executable",
+      "executablePath": "D:\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+      "commandLineArgs": "\"D:\\UnrealProjects\\RPG\\RPG.uproject\""
+    }
+  }
+}

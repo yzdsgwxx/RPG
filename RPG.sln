@@ -1,0 +1,164 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31314.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{233774A8-CC9D-3FA9-86D1-90573E92B704}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE5", "Intermediate\ProjectFiles\UE5.vcxproj", "{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{DE1F8B53-6C02-3C13-9101-A7C8D96F3FF6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RPG", "Intermediate\ProjectFiles\RPG.vcxproj", "{00B47C36-697C-3A3A-9FD7-42927FB4890B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{1CCEC849-CC72-4C59-8C36-2F7C38706D4C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\UE_5.8\Engine\Extras\VisualStudioDebugging\Unreal.natjmc = ..\..\UE_5.8\Engine\Extras\VisualStudioDebugging\Unreal.natjmc
+		..\..\UE_5.8\Engine\Extras\VisualStudioDebugging\Unreal.natstepfilter = ..\..\UE_5.8\Engine\Extras\VisualStudioDebugging\Unreal.natstepfilter
+		..\..\UE_5.8\Engine\Extras\VisualStudioDebugging\Unreal.natvis = ..\..\UE_5.8\Engine\Extras\VisualStudioDebugging\Unreal.natvis
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedRPG", "Script\ManagedRPG\ManagedRPG.csproj", "{DE089AAE-9914-41FF-988C-D037EC15CBB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG.RuntimeGlue", "Script\RPG.RuntimeGlue\RPG.RuntimeGlue.csproj", "{D5563F72-7008-44FA-8480-9870FE10944F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugGame Editor|Win64 = DebugGame Editor|Win64
+		DebugGame Editor|Win64-arm64 = DebugGame Editor|Win64-arm64
+		DebugGame Editor|Win64-arm64ec = DebugGame Editor|Win64-arm64ec
+		DebugGame|Win64 = DebugGame|Win64
+		DebugGame|Win64-arm64 = DebugGame|Win64-arm64
+		DebugGame|Win64-arm64ec = DebugGame|Win64-arm64ec
+		Development Editor|Win64 = Development Editor|Win64
+		Development Editor|Win64-arm64 = Development Editor|Win64-arm64
+		Development Editor|Win64-arm64ec = Development Editor|Win64-arm64ec
+		Development|Win64 = Development|Win64
+		Development|Win64-arm64 = Development|Win64-arm64
+		Development|Win64-arm64ec = Development|Win64-arm64ec
+		Shipping|Win64 = Shipping|Win64
+		Shipping|Win64-arm64 = Shipping|Win64-arm64
+		Shipping|Win64-arm64ec = Shipping|Win64-arm64ec
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.DebugGame Editor|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.DebugGame Editor|Win64-arm64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.DebugGame Editor|Win64-arm64ec.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.DebugGame|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.DebugGame|Win64-arm64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.DebugGame|Win64-arm64ec.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.Development Editor|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.Development Editor|Win64-arm64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.Development Editor|Win64-arm64ec.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.Development|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.Development|Win64-arm64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.Development|Win64-arm64ec.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.Shipping|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.Shipping|Win64-arm64.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E}.Shipping|Win64-arm64ec.ActiveCfg = BuiltWithUnrealBuildTool|Win64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame Editor|Win64.ActiveCfg = DebugGame_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame Editor|Win64.Build.0 = DebugGame_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame Editor|Win64-arm64.ActiveCfg = Win64_arm64_DebugGame_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame Editor|Win64-arm64.Build.0 = Win64_arm64_DebugGame_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame Editor|Win64-arm64ec.ActiveCfg = Win64_arm64ec_DebugGame_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame Editor|Win64-arm64ec.Build.0 = Win64_arm64ec_DebugGame_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame|Win64.ActiveCfg = DebugGame|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame|Win64.Build.0 = DebugGame|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame|Win64-arm64.ActiveCfg = Win64_arm64_DebugGame|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame|Win64-arm64.Build.0 = Win64_arm64_DebugGame|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame|Win64-arm64ec.ActiveCfg = Win64_arm64ec_DebugGame|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.DebugGame|Win64-arm64ec.Build.0 = Win64_arm64ec_DebugGame|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development Editor|Win64.ActiveCfg = Development_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development Editor|Win64.Build.0 = Development_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development Editor|Win64-arm64.ActiveCfg = Win64_arm64_Development_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development Editor|Win64-arm64.Build.0 = Win64_arm64_Development_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development Editor|Win64-arm64ec.ActiveCfg = Win64_arm64ec_Development_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development Editor|Win64-arm64ec.Build.0 = Win64_arm64ec_Development_Editor|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development|Win64.ActiveCfg = Development|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development|Win64.Build.0 = Development|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development|Win64-arm64.ActiveCfg = Win64_arm64_Development|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development|Win64-arm64.Build.0 = Win64_arm64_Development|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development|Win64-arm64ec.ActiveCfg = Win64_arm64ec_Development|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Development|Win64-arm64ec.Build.0 = Win64_arm64ec_Development|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Shipping|Win64.ActiveCfg = Shipping|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Shipping|Win64.Build.0 = Shipping|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Shipping|Win64-arm64.ActiveCfg = Win64_arm64_Shipping|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Shipping|Win64-arm64.Build.0 = Win64_arm64_Shipping|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Shipping|Win64-arm64ec.ActiveCfg = Win64_arm64ec_Shipping|x64
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B}.Shipping|Win64-arm64ec.Build.0 = Win64_arm64ec_Shipping|x64
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame Editor|Win64.ActiveCfg = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame Editor|Win64.Build.0 = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame Editor|Win64-arm64.ActiveCfg = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame Editor|Win64-arm64.Build.0 = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame Editor|Win64-arm64ec.ActiveCfg = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame Editor|Win64-arm64ec.Build.0 = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame|Win64.ActiveCfg = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame|Win64.Build.0 = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame|Win64-arm64.ActiveCfg = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame|Win64-arm64.Build.0 = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame|Win64-arm64ec.ActiveCfg = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.DebugGame|Win64-arm64ec.Build.0 = Debug|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development Editor|Win64.ActiveCfg = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development Editor|Win64.Build.0 = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development Editor|Win64-arm64.ActiveCfg = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development Editor|Win64-arm64.Build.0 = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development Editor|Win64-arm64ec.ActiveCfg = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development Editor|Win64-arm64ec.Build.0 = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development|Win64.ActiveCfg = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development|Win64.Build.0 = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development|Win64-arm64.ActiveCfg = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development|Win64-arm64.Build.0 = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development|Win64-arm64ec.ActiveCfg = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Development|Win64-arm64ec.Build.0 = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Shipping|Win64.ActiveCfg = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Shipping|Win64.Build.0 = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Shipping|Win64-arm64.ActiveCfg = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Shipping|Win64-arm64.Build.0 = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Shipping|Win64-arm64ec.ActiveCfg = Release|Any CPU
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1}.Shipping|Win64-arm64ec.Build.0 = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame Editor|Win64.ActiveCfg = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame Editor|Win64.Build.0 = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame Editor|Win64-arm64.ActiveCfg = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame Editor|Win64-arm64.Build.0 = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame Editor|Win64-arm64ec.ActiveCfg = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame Editor|Win64-arm64ec.Build.0 = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame|Win64.ActiveCfg = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame|Win64.Build.0 = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame|Win64-arm64.ActiveCfg = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame|Win64-arm64.Build.0 = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame|Win64-arm64ec.ActiveCfg = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.DebugGame|Win64-arm64ec.Build.0 = Debug|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development Editor|Win64.ActiveCfg = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development Editor|Win64.Build.0 = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development Editor|Win64-arm64.ActiveCfg = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development Editor|Win64-arm64.Build.0 = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development Editor|Win64-arm64ec.ActiveCfg = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development Editor|Win64-arm64ec.Build.0 = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development|Win64.ActiveCfg = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development|Win64.Build.0 = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development|Win64-arm64.ActiveCfg = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development|Win64-arm64.Build.0 = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development|Win64-arm64ec.ActiveCfg = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Development|Win64-arm64ec.Build.0 = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Shipping|Win64.ActiveCfg = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Shipping|Win64.Build.0 = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Shipping|Win64-arm64.ActiveCfg = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Shipping|Win64-arm64.Build.0 = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Shipping|Win64-arm64ec.ActiveCfg = Release|Any CPU
+		{D5563F72-7008-44FA-8480-9870FE10944F}.Shipping|Win64-arm64ec.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84E003DC-2AFE-3C92-A20F-B5EC34A1197E} = {233774A8-CC9D-3FA9-86D1-90573E92B704}
+		{00B47C36-697C-3A3A-9FD7-42927FB4890B} = {DE1F8B53-6C02-3C13-9101-A7C8D96F3FF6}
+		{DE089AAE-9914-41FF-988C-D037EC15CBB1} = {DE1F8B53-6C02-3C13-9101-A7C8D96F3FF6}
+		{D5563F72-7008-44FA-8480-9870FE10944F} = {DE1F8B53-6C02-3C13-9101-A7C8D96F3FF6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A9F62D3-92AB-4269-82F5-D92FA2441A7F}
+	EndGlobalSection
+	GlobalSection(ddbf523f-7eb6-4887-bd51-85a714ff87eb) = preSolution
+		AvailablePlatforms = Win64
+	EndGlobalSection
+EndGlobal

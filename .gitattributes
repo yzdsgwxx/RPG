@@ -1,0 +1,56 @@
+# Git 属性配置（Unreal 项目）—— 使用 Git LFS
+
+# 二进制资产由 Git LFS 管理。LFS 追踪规则（filter=lfs）由
+# `git lfs migrate import` / `git lfs track` 自动写入到本文件末尾，
+# 不要手工删除那些 `filter=lfs` 行，否则资产会退化为普通 Git 对象、
+# 且**别人克隆时拿到的仍是 130 字节指针文件**（本仓库踩过这个坑）。
+# --- 文本文件行尾 ----------------------------------------------------------
+# 源码统一 LF，避免跨平台协作的行尾抖动；
+# VS / UnrealSharp 生成的文件保持 CRLF（Windows 工具链的惯例）。
+*.cs      text eol=lf
+*.csproj  text eol=crlf
+*.sln     text eol=crlf
+*.cpp     text eol=lf
+*.h       text eol=lf
+*.ini     text eol=crlf
+*.uplugin text eol=lf
+*.json    text eol=lf
+*.md      text eol=lf
+*.py      text eol=lf
+# --- 保持原样 --------------------------------------------------------------
+# .uproject 由编辑器写回，保持原样避免无意义的 diff 噪音。
+*.uproject -text
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap filter=lfs diff=lfs merge=lfs -text
+*.upk filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.dds filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.flac filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.wmv filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.mb filter=lfs diff=lfs merge=lfs -text
+*.ma filter=lfs diff=lfs merge=lfs -text
+*.max filter=lfs diff=lfs merge=lfs -text
+*.ttf filter=lfs diff=lfs merge=lfs -text
+*.otf filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
+*.tar filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
